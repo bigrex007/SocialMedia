@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  padding: 40px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.user-info span {
+  margin-right: 20px;
+  color: #fff;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.post {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.posts-page form {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.posts-page input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.posts-page button {
+  padding: 10px 15px;
+}
+
+.toggle-form {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #444; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-form:hover {
+  background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+.switch-to-register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.switch-to-register button {
+  background: none;
+  border: none;
+  color: #0d6efd;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switch-to-register button:hover {
+  text-decoration: underline;
 }
